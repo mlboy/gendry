@@ -501,7 +501,7 @@ func (s *SQLSegments) BuildSelect() string {
 		s.buildUnion(),
 		s.buildForUpdate(),
 	)
-	fmt.Println(s.render.args)
+	// fmt.Println(s.render.args)
 	return sql
 }
 

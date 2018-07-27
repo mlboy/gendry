@@ -1,8 +1,14 @@
 package main
 
-import "github.com/mlboy/gendry/builder"
+import (
+	"fmt"
+
+	"github.com/mlboy/gendry/builder"
+)
 
 func main() {
 	v := builder.NewSQLSegment()
-	v.Table("")
+	v.Table("test")
+	s := v.BuildSelect()
+	fmt.Println(s)
 }
